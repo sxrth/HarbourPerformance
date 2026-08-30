@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "id": "harbourperformance",
-  "version": "1.2.0",
-  "name": "HarbourPerformance",
+  "id": "obsidianoptimization",
+  "version": "1.2.1",
+  "name": "ObsidianOptimization",
   "description": "High-performance Fabric optimization mod focused on FPS, frametime stability and PvP performance.",
   "authors": [
-    "HarbourPVP"
+    "Sxrth"
   ],
   "contact": {
     "homepage": "https://modrinth.com/"
@@ -14,12 +14,12 @@
   "environment": "client",
   "entrypoints": {
     "client": [
-      "com.harbourperformance.HarbourPerformance"
+      "com.obsidianoptimization.ObsidianOptimization"
     ]
   },
   "depends": {
     "fabricloader": ">=0.16.0",
-    "minecraft": ">=1.21 <1.22",
+    "minecraft": "1.21.11",
     "fabric-api": "*"
   }
 }
