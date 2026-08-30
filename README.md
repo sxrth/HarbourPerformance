@@ -5,10 +5,10 @@ Compatibility-first Fabric client mod.
 Build:
 - Minecraft 1.21.11
 - Yarn 1.21.11+build.6
-- Fabric Loom Remap 1.12.1
-- Gradle 8.14
+- Fabric Loom 1.17.13
+- Gradle 9.6.1
 - Java 21
-- Fabric API 0.141.6+1.21.11
+- Fabric API 0.141.4+1.21.11
 
 Compatibility:
 - No renderer Mixins

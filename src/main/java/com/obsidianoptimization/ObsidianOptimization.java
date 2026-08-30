@@ -3,11 +3,11 @@ package com.obsidianoptimization;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
-import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
 import org.lwjgl.glfw.GLFW;
 
 public final class ObsidianOptimization implements ClientModInitializer {
@@ -16,18 +16,22 @@ public final class ObsidianOptimization implements ClientModInitializer {
     private static boolean performanceMode;
     private static boolean adaptiveMode;
 
+    private static final KeyBinding.Category CATEGORY = KeyBinding.Category.register(
+            Identifier.of(NAME.toLowerCase(), "controls")
+    );
+
     private static final KeyBinding PERFORMANCE = new KeyBinding(
             "key.obsidianoptimization.performance",
             InputUtil.Type.KEYSYM,
             GLFW.GLFW_KEY_F8,
-            "category.obsidianoptimization"
+            CATEGORY
     );
 
     private static final KeyBinding ADAPTIVE = new KeyBinding(
             "key.obsidianoptimization.adaptive",
             InputUtil.Type.KEYSYM,
             GLFW.GLFW_KEY_F9,
-            "category.obsidianoptimization"
+            CATEGORY
     );
 
     @Override
