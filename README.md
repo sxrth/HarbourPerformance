@@ -1,7 +1,19 @@
-# ObsidianOptimization 1.2.1
+# ObsidianOptimization 1.6.2
 
-Fabric client-side performance mod.
+Compatibility-first Fabric client mod.
 
-This build targets Minecraft 1.21.11 and fixes the 1.21.11 KeyMapping constructor crash. F8 toggles Performance Mode and F9 toggles Adaptive Mode.
+Build:
+- Minecraft 1.21.11
+- Yarn 1.21.11+build.6
+- Fabric Loom Remap 1.12.1
+- Gradle 8.14
+- Java 21
+- Fabric API 0.141.6+1.21.11
 
-Build toolchain: Gradle 8.14, Fabric Loom 1.12.1, Java 21.
+Compatibility:
+- No renderer Mixins
+- No particle/entity Mixins
+- No direct renderer replacement
+- Read-only detection of Sodium/Iris/ImmediatelyFast/Lithium/etc.
+- F8 Performance Mode
+- F9 Adaptive Mode

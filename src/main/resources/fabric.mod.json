@@ -1,15 +1,12 @@
 {
   "schemaVersion": 1,
   "id": "obsidianoptimization",
-  "version": "1.2.1",
+  "version": "${version}",
   "name": "ObsidianOptimization",
-  "description": "High-performance Fabric optimization mod focused on FPS, frametime stability and PvP performance.",
+  "description": "Compatibility-first client-side performance optimization for Fabric.",
   "authors": [
     "Sxrth"
   ],
-  "contact": {
-    "homepage": "https://modrinth.com/"
-  },
   "license": "MIT",
   "environment": "client",
   "entrypoints": {
@@ -21,5 +18,13 @@
     "fabricloader": ">=0.16.0",
     "minecraft": "1.21.11",
     "fabric-api": "*"
+  },
+  "suggests": {
+    "sodium": "*",
+    "iris": "*",
+    "lithium": "*",
+    "ferritecore": "*",
+    "entityculling": "*",
+    "immediatelyfast": "*"
   }
 }
