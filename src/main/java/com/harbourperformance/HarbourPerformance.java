@@ -32,6 +32,7 @@ public final class HarbourPerformance implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        PerformanceRuntime.initialize();
         KeyBindingHelper.registerKeyBinding(TOGGLE);
         KeyBindingHelper.registerKeyBinding(ADAPTIVE);
 
