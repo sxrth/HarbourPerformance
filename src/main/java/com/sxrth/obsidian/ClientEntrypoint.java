@@ -1,17 +1,15 @@
 package com.sxrth.obsidian;
 
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.loader.api.FabricLoader;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-public final class ClientEntrypoint implements ClientModInitializer {
+public class ClientEntrypoint implements ClientModInitializer {
+    public static final String MOD_ID = "obsidianoptimization";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+
     @Override
     public void onInitializeClient() {
-        FabricLoader loader = FabricLoader.getInstance();
-
-        System.out.println("[ObsidianOptimization] 1.6.5 loaded.");
-        System.out.println("[ObsidianOptimization] Sodium=" + loader.isModLoaded("sodium"));
-        System.out.println("[ObsidianOptimization] Iris=" + loader.isModLoaded("iris"));
-        System.out.println("[ObsidianOptimization] Lithium=" + loader.isModLoaded("lithium"));
-        System.out.println("[ObsidianOptimization] ImmediatelyFast=" + loader.isModLoaded("immediatelyfast"));
+        LOGGER.info("ObsidianOptimization initialized successfully!");
     }
 }
