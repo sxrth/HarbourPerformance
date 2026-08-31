@@ -3,23 +3,28 @@
   "id": "obsidianoptimization",
   "version": "${version}",
   "name": "ObsidianOptimization",
-  "description": "A performance optimization mod for Fabric.",
+  "description": "Compatibility-first Fabric client optimization foundation.",
   "authors": [
-    "sxrth"
+    "Sxrth"
   ],
-  "contact": {},
   "license": "MIT",
-  "icon": "assets/obsidian/icon.png",
   "environment": "client",
   "entrypoints": {
-    "client": [
-      "com.sxrth.obsidian.ClientEntrypoint"
+    "preLaunch": [
+      "com.sxrth.obsidian.ObsidianOptimization"
     ]
   },
-  "mixins": [],
   "depends": {
-    "fabricloader": ">=0.16.0",
-    "minecraft": "~1.21.1",
-    "java": ">=21"
+    "fabricloader": ">=0.18.0",
+    "minecraft": "1.21.11"
+  },
+  "suggests": {
+    "fabric-api": "*",
+    "sodium": "*",
+    "iris": "*",
+    "lithium": "*",
+    "ferritecore": "*",
+    "entityculling": "*",
+    "immediatelyfast": "*"
   }
 }
