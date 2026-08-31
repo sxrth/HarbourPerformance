@@ -1,5 +1,5 @@
 {
-  "key.obsidianoptimization.performance": "Performance Mode",
-  "key.obsidianoptimization.adaptive": "Adaptive Mode",
-  "key.category.obsidianoptimization.controls": "ObsidianOptimization"
+  "key.obsidianoptimization.performance": "Toggle Performance Mode",
+  "key.obsidianoptimization.adaptive": "Toggle Adaptive Mode",
+  "category.obsidianoptimization": "ObsidianOptimization"
 }

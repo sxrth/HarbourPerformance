@@ -3,7 +3,7 @@
   "id": "obsidianoptimization",
   "version": "${version}",
   "name": "ObsidianOptimization",
-  "description": "Compatibility-first client-side performance optimization for Fabric.",
+  "description": "Compatibility-first client performance foundation for Fabric. No Fabric API dependency, no renderer Mixins.",
   "authors": [
     "Sxrth"
   ],
@@ -11,15 +11,15 @@
   "environment": "client",
   "entrypoints": {
     "client": [
-      "com.obsidianoptimization.ObsidianOptimization"
+      "com.sxrth.obsidian.ClientEntrypoint"
     ]
   },
   "depends": {
-    "fabricloader": ">=0.16.0",
-    "minecraft": "1.21.11",
-    "fabric-api": "*"
+    "fabricloader": ">=0.18.0",
+    "minecraft": "1.21.11"
   },
   "suggests": {
+    "fabric-api": "*",
     "sodium": "*",
     "iris": "*",
     "lithium": "*",
