@@ -3,7 +3,7 @@
   "id": "obsidianoptimization",
   "version": "${version}",
   "name": "ObsidianOptimization",
-  "description": "Compatibility-first client performance foundation for Fabric. No Fabric API dependency, no renderer Mixins.",
+  "description": "Compatibility-first client performance foundation for Fabric. It detects common optimization mods without replacing or patching their renderers.",
   "authors": [
     "Sxrth"
   ],
@@ -11,7 +11,7 @@
   "environment": "client",
   "entrypoints": {
     "client": [
-      "com.sxrth.obsidian.ClientEntrypoint"
+      "com.sxrth.obsidianoptimization.ObsidianOptimization"
     ]
   },
   "depends": {
