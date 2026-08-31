@@ -3,7 +3,7 @@
   "id": "obsidianoptimization",
   "version": "${version}",
   "name": "ObsidianOptimization",
-  "description": "Compatibility-first client performance foundation for Fabric. It detects common optimization mods without replacing or patching their renderers.",
+  "description": "Compatibility-first Fabric client optimization foundation.",
   "authors": [
     "Sxrth"
   ],
@@ -11,15 +11,15 @@
   "environment": "client",
   "entrypoints": {
     "client": [
-      "com.sxrth.obsidianoptimization.ObsidianOptimization"
+      "com.sxrth.obsidian.ClientEntrypoint"
     ]
   },
   "depends": {
     "fabricloader": ">=0.18.0",
-    "minecraft": "1.21.11"
+    "minecraft": "1.21.11",
+    "fabric-api-base": "*"
   },
   "suggests": {
-    "fabric-api": "*",
     "sodium": "*",
     "iris": "*",
     "lithium": "*",
