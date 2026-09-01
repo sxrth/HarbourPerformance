@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "obsidianoptimization",
+  "version": "${version}",
+  "name": "ObsidianOptimization",
+  "description": "Lightweight client-side performance optimization for Minecraft 1.21.11.",
+  "authors": [
+    "Sxrth"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.sxrth.obsidianoptimization.ObsidianOptimization"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.2",
+    "minecraft": "1.21.11"
+  },
+  "suggests": {
+    "sodium": "*",
+    "iris": "*",
+    "lithium": "*",
+    "ferritecore": "*",
+    "entityculling": "*",
+    "immediatelyfast": "*"
+  }
+}
