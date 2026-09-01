@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "obsidianoptimization",
+  "version": "${version}",
+  "name": "ObsidianOptimization",
+  "description": "Compatibility-first Fabric client optimization foundation for Minecraft 1.21.11.",
+  "authors": ["Sxrth"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.sxrth.obsidian.ObsidianOptimization"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "1.21.11"
+  },
+  "suggests": {
+    "sodium": "*",
+    "iris": "*",
+    "lithium": "*",
+    "ferritecore": "*",
+    "entityculling": "*",
+    "immediatelyfast": "*"
+  }
+}
