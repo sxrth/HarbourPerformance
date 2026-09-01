@@ -20,10 +20,10 @@ jobs:
           distribution: temurin
           java-version: '21'
 
-      - name: Setup Gradle 8.14
+      - name: Setup Gradle 9.5
         uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: '8.14'
+          gradle-version: '9.5'
 
       - name: Build
         run: gradle clean build --no-daemon --refresh-dependencies
