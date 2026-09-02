@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.9.2'
+    id 'fabric-loom' version '1.11.0-alpha.21'
     id 'maven-publish'
 }
 
@@ -12,6 +12,7 @@ base {
 
 repositories {
     maven { name = 'Fabric'; url = 'https://maven.fabricmc.net/' }
+    maven { name = 'Modrinth'; url = 'https://api.modrinth.com/maven' }
     mavenCentral()
 }
 
@@ -19,6 +20,8 @@ dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings loom.officialMojangMappings()
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "maven.modrinth:P7dR8mSH:${project.fabric_api_version}"
+    modCompileOnly "maven.modrinth:mOgUt4GM:${project.modmenu_version}"
 }
 
 processResources {
