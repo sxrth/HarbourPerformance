@@ -13,12 +13,9 @@ public final class ObsidianOptimizationModMenu implements ModMenuApi {
             @Override
             protected void init() {
                 addRenderableWidget(Button.builder(
-                        Component.literal("Apply Automatic Performance"),
-                        button -> {
-                            ObsidianOptimization.resetPerformanceProfile();
-                            onClose();
-                        })
-                    .bounds(this.width / 2 - 100, this.height / 2 - 10, 200, 20)
+                        Component.literal("Automatic optimization: ON"),
+                        button -> {})
+                    .bounds(this.width / 2 - 120, this.height / 2 - 10, 240, 20)
                     .build());
             }
 

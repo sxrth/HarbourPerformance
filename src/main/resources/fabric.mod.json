@@ -3,8 +3,10 @@
   "id": "obsidianoptimization",
   "version": "${version}",
   "name": "ObsidianOptimization",
-  "description": "Automatic, compatibility-first client performance optimization for Minecraft 1.21.11.",
-  "authors": ["Sxrth"],
+  "description": "Automatic, compatibility-first client performance optimization for Minecraft 1.21.11. Does not modify render or simulation distance.",
+  "authors": [
+    "Sxrth"
+  ],
   "license": "MIT",
   "environment": "client",
   "entrypoints": {
